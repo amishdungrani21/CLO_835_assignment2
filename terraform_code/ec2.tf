@@ -53,3 +53,13 @@ resource "aws_key_pair" "k8s" {
   key_name   = "week5"
   public_key = file("${path.module}/week5.pub")
 }
+
+resource "aws_ecr_repository" "webrepo" {
+  name = "web_repo"
+
+}
+
+resource "aws_ecr_repository" "sqlrepo" {
+  name = "sql_repos"
+
+}
