@@ -31,7 +31,7 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORYAMISH21DB: sql_repos
         ECR_REPOSITORYAMISH21WEB: web_repo
-        IMAGE_TAG: V0.1
+        IMAGE_TAG: V0.2
       run: |
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORYAMISH21DB:$IMAGE_TAG -f Dockerfile_mysql .
