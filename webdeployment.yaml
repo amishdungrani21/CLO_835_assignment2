@@ -18,11 +18,11 @@ spec:
       - name: web
         image: "462270994088.dkr.ecr.us-east-1.amazonaws.com/web_repo:V0.1"
         env:
-        - name: HOST
+        - name: DBHOST
           value: "mysql.mysql.svc.cluster.local"
-        - name: PORT
+        - name: DBPORT
           value: "3306"
-        - name: USER
+        - name: DBUSER
           value: "root"
         - name: MYSQL_ROOT_PASSWORD
           value: "5295"
