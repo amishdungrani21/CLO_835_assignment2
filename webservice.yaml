@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+  labels:
+    app: employees
+spec:
+  selector:
+    app: employees
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+      nodePort: 30001
+  type: NodePort
