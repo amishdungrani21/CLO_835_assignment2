@@ -11,3 +11,4 @@ spec:
       value: "5295"
     ports:
     - containerPort: 3306
+    type: ClusterIP
