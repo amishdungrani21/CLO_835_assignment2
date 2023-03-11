@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: 462270994088.dkr.ecr.us-east-1.amazonaws.com/web_repo:V0.2
+        image: 462270994088.dkr.ecr.us-east-1.amazonaws.com/web_repo:V0.1
         env:
         - name: DBHOST
           value: "mysql.mysql.svc.cluster.local"
